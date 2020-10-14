@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: main
+      server:
+        git:
+          uri: https://github.com/Li-kaixingui/springcloudConfig.git
+          searchPaths: respo
+      username: 244208180@qq.com
+      password: likaixin1996
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
